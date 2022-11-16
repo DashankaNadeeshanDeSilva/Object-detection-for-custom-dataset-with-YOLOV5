@@ -15,3 +15,7 @@ The general YOLO architecture can be divided into 3 parts namely the head, neck 
 * The custom data can be created using an open source object annotating tool such as ImageLabel or Roboflow.
 * Notebook to train the model, validation and testing can be done using the notebook "Object detection model train and detection.ipynb".
 * During and after model training, performance evaluation metrics such as Mean Average Precision (mAP), Precision and Recall including graphs can be used to evaluate the model.
+
+## Evaluation Metrics
+
+Precision is the ability of the model to detect only the relevant objects. It measures how many of the bounding box predictions or positive identifications are correct. The recall is the ability of a model to find all ground truth bounding boxes. The Precision-Recall (PR) Curve is a plot of Precision on the vertical axis and Recall on the horizontal axis. The precision and recall are plotted as a function of the confidence threshold. This shows how precision and recall values change while detection confidence varies. Furthermore, it enables selecting a trade-off between precision and recall. Average precision (AP) is the area under the precision-recall curve for each class in the detection problem. The Mean Average Precision (mAP) is one of the most popular metrics used to evaluate object detection models.
